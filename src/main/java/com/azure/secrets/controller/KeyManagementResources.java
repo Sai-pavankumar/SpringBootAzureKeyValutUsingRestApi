@@ -1,4 +1,4 @@
-package azure.secrets.controller;
+package com.azure.secrets.controller;
 
 import com.azure.secrets.handler.KeyManagementHandler;
 import com.azure.secrets.model.AzureSecret;
