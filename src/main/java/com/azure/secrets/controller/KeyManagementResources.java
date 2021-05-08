@@ -19,14 +19,14 @@ import java.util.Map;
 @ComponentScan("com/azure/secrets")
 public class KeyManagementResources extends SpringBootServletInitializer {
 
-    private static final Logger logger =LoggerFactory.getLogger(azure.secrets.controller.KeyManagementResources.class);
+    private static final Logger logger =LoggerFactory.getLogger(KeyManagementResources.class);
 
     @Autowired
     KeyManagementHandler keyManagementHandler;
 
     public static void main(String[] args) {
         System.setProperty("server.servlet.context-path","/");
-        SpringApplication.run(azure.secrets.controller.KeyManagementResources.class,args);
+        SpringApplication.run(KeyManagementResources.class,args);
     }
 
     /** This method which takes the get Request with key as param and returns json string with key and value
